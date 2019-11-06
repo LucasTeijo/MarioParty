@@ -4,8 +4,7 @@ import java.awt.Graphics;
 import java.util.ArrayList;
 
 import hansolo.marioparty.entidades.Jugador;
-import hansolo.marioparty.graficos.Texturas;
-import hansolo.marioparty.ui.AdministradorUI;
+
 
 /**
  * Clase abstracta que define lo que comparten en común todos los tipos de
@@ -38,29 +37,29 @@ public abstract class Casillero {
 		this.sur = null;
 	}
 
-	public abstract void efecto(Jugador jugador, AdministradorUI administradorUI);
+	public abstract void efecto(Jugador jugador);
 	
-	protected abstract void dibujar(Graphics g);
+	//protected abstract void dibujar(Graphics g);
 	
-	public void predibujar(Graphics g) {
-		// dibuja las conexiones con sus casilleros siguientes
-		if (norte != null) {
-			g.drawImage(Texturas.casillero_conexion_norte_out, x, y, null);
-			g.drawImage(Texturas.casillero_conexion_sur_in, norte.getCasillero().getX(), norte.getCasillero().getY(), null);
-		}
-		if (sur != null) {
-			g.drawImage(Texturas.casillero_conexion_sur_out, x, y, null);
-			g.drawImage(Texturas.casillero_conexion_norte_in, sur.getCasillero().getX(), sur.getCasillero().getY(), null);
-		}
-		if (oeste != null) {
-			g.drawImage(Texturas.casillero_conexion_oeste_out, x, y, null);
-			g.drawImage(Texturas.casillero_conexion_este_in, oeste.getCasillero().getX(), oeste.getCasillero().getY(), null);
-		}
-		if (este != null) {
-			g.drawImage(Texturas.casillero_conexion_este_out, x, y, null);
-			g.drawImage(Texturas.casillero_conexion_oeste_in, este.getCasillero().getX(), este.getCasillero().getY(), null);
-		}
-	}
+//	public void predibujar(Graphics g) {
+//		// dibuja las conexiones con sus casilleros siguientes
+//		if (norte != null) {
+//			g.drawImage(Texturas.casillero_conexion_norte_out, x, y, null);
+//			g.drawImage(Texturas.casillero_conexion_sur_in, norte.getCasillero().getX(), norte.getCasillero().getY(), null);
+//		}
+//		if (sur != null) {
+//			g.drawImage(Texturas.casillero_conexion_sur_out, x, y, null);
+//			g.drawImage(Texturas.casillero_conexion_norte_in, sur.getCasillero().getX(), sur.getCasillero().getY(), null);
+//		}
+//		if (oeste != null) {
+//			g.drawImage(Texturas.casillero_conexion_oeste_out, x, y, null);
+//			g.drawImage(Texturas.casillero_conexion_este_in, oeste.getCasillero().getX(), oeste.getCasillero().getY(), null);
+//		}
+//		if (este != null) {
+//			g.drawImage(Texturas.casillero_conexion_este_out, x, y, null);
+//			g.drawImage(Texturas.casillero_conexion_oeste_in, este.getCasillero().getX(), este.getCasillero().getY(), null);
+//		}
+//	}
 
 	/**
 	 * Retorna un SiguienteCasillero que es el casillero al que corresponde

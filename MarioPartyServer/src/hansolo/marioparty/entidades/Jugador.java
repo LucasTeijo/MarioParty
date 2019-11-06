@@ -49,7 +49,7 @@ public class Jugador {
 		//cargarSprites();
 	}
 	//cliente
-//	public void calcular() {
+	public void calcular() {
 //		// si el jugador esta parado en el [x,y] de su casillero y le quedan movimientos,
 //		if (estoyParadoEnMiPosicion() && avanzando) {// cantMovimientos != 0) {
 //			cantMovimientos--;
@@ -72,7 +72,7 @@ public class Jugador {
 //		} else if (!estoyParadoEnMiPosicion() && avanzando) { // cantMovimientos != 0) {
 //			avanzarHaciaPosicion();
 //		}
-//	}
+	}
 
 	public void dibujar(Graphics g) {
 		g.drawImage(spriteTablero, x, y, null);

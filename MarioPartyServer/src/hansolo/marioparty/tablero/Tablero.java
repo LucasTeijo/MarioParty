@@ -1,13 +1,13 @@
 package hansolo.marioparty.tablero;
 
-import java.awt.Graphics;
+
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 import hansolo.marioparty.Juego;
-import hansolo.marioparty.admin.Usuario;
+//import hansolo.marioparty.admin.Usuario;
 import hansolo.marioparty.entidades.Jugador;
 import hansolo.marioparty.tablero.casilleros.EstrellaCasillero;
 import hansolo.marioparty.utils.LeerArchivo;
@@ -39,15 +39,15 @@ public class Tablero {
 		
 	}
 	
-	public void predibujar(Graphics g) {
-		for (Casillero c : casilleros)
-			c.predibujar(g);
-	}
-
-	public void dibujar(Graphics g) {
-		for (Casillero c : casilleros)
-			c.dibujar(g);
-	}
+//	public void predibujar(Graphics g) {
+//		for (Casillero c : casilleros)
+//			c.predibujar(g);
+//	}
+//
+//	public void dibujar(Graphics g) {
+//		for (Casillero c : casilleros)
+//			c.dibujar(g);
+//	}
 
 	private void cargarCasilleros(String path) {
 		this.idsCasillerosEstrella = new ArrayList<Integer>();

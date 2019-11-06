@@ -27,6 +27,6 @@ public abstract class State {
 	// todos los estados tienen que recalcular los cambios
 	public abstract void calcular();
 	
-	// todos los estados tienen que dibujarse
-	public abstract void dibujar(Graphics g);
+//	// todos los estados tienen que dibujarse
+//	public abstract void dibujar(Graphics g);
 }

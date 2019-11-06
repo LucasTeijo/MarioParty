@@ -16,10 +16,10 @@ public class MinijuegoState extends State {
 
 	}
 
-	@Override
-	public void dibujar(Graphics g) {
-		g.setColor(Color.white);
-		g.drawString("MINIJUEGO STATE", 500, 500);
-	}
+//	@Override
+//	public void dibujar(Graphics g) {
+//		g.setColor(Color.white);
+//		g.drawString("MINIJUEGO STATE", 500, 500);
+//	}
 
 }

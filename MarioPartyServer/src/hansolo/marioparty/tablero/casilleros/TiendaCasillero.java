@@ -5,10 +5,10 @@ import java.awt.Font;
 import java.awt.Graphics;
 
 import hansolo.marioparty.entidades.Jugador;
-import hansolo.marioparty.graficos.Texturas;
+
 import hansolo.marioparty.tablero.Casillero;
 import hansolo.marioparty.tablero.SiguienteCasillero;
-import hansolo.marioparty.ui.AdministradorUI;
+
 
 /**
  * Casillero que, cuando un jugador cae en él, le permite comprar un item de una
@@ -25,17 +25,17 @@ public class TiendaCasillero extends Casillero {
 	}
 
 	@Override
-	public void efecto(Jugador jugador, AdministradorUI administradorUI) {
+	public void efecto(Jugador jugador) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
-	protected void dibujar(Graphics g) {
-		g.drawImage(Texturas.casillero_tienda, x, y, null);
-		
-//		g.setFont(new Font("Calibri", Font.PLAIN, 20));
-//		g.drawString(Integer.toString(id), x + 16, y + 16);
-	}
+//	@Override
+//	protected void dibujar(Graphics g) {
+//		g.drawImage(Texturas.casillero_tienda, x, y, null);
+//		
+////		g.setFont(new Font("Calibri", Font.PLAIN, 20));
+////		g.drawString(Integer.toString(id), x + 16, y + 16);
+//	}
 
 }
