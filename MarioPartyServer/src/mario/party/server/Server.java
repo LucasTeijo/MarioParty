@@ -6,6 +6,8 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
+import admin.Lobby;
+
 
 
 public class Server {
@@ -23,7 +25,9 @@ public class Server {
 		try {
 			server = new ServerSocket(PUERTO);
 			System.out.println("Esperando conexion de cliente");
-
+			
+			Lobby lobby = new Lobby();
+			
 			for (int i = 0; i < CANTIDAD_CLIENTES; i++) {
 				// Metodo bloqueante a la espera de un cliente
 				cliente = server.accept();

@@ -13,7 +13,6 @@ import hansolo.marioparty.entidades.Jugador;
 import hansolo.marioparty.tablero.Casillero;
 import hansolo.marioparty.tablero.SiguienteCasillero;
 
-
 /**
  * Casillero que, si pagás una cantidad de monedas, te lleva a la posición de
  * otro jugador
@@ -30,7 +29,7 @@ public class TeleportCasillero extends Casillero {
 	@Override
 	public void efecto(Jugador jugador) {
 		List<Jugador> jugadores = jugador.getJuego().getJugadores();
-		//dibujarBotones(jugador, administradorUI, jugadores);
+		// dibujarBotones(jugador, administradorUI, jugadores);
 		// System.out.println(jugador.getUser().getNombre() + " calló en un casillero
 		// para teletransportar");
 	}
