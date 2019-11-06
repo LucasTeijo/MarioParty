@@ -32,7 +32,7 @@ public class Ventana extends Thread {
 		frame.setSize(width, height);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		frame.setResizable(true); // que no se pueda modificar el tamaño
+		frame.setResizable(false); // que no se pueda modificar el tamaño
 		frame.setLocationRelativeTo(null); // que se abra en el centro de la pantalla
 		frame.setVisible(true); // que se pueda ver
 
@@ -59,19 +59,19 @@ public class Ventana extends Thread {
 	@Override
 	public void run() {
 
-		while (!cliente.isClosed()) {
-			String mensajeRecibido = cliente.recibirMensaje();
-
-			if (mensajeRecibido.contains("/salir")) {
-				cliente.cerrarSocket();
-				break;
-			} else {
-				// textArea.append(mensajeRecibido + "\n");
-			}
-		}
-		// System.out.println("Saliste del chat");
-		frame.dispose();
-		System.exit(1);
+//		while (!cliente.isClosed()) {
+//			String mensajeRecibido = cliente.recibirMensaje();
+//
+//			if (mensajeRecibido.contains("/salir")) {
+//				cliente.cerrarSocket();
+//				break;
+//			} else {
+//				// textArea.append(mensajeRecibido + "\n");
+//			}
+//		}
+//		// System.out.println("Saliste del chat");
+//		frame.dispose();
+//		System.exit(1);
 	}
 
 	/**
